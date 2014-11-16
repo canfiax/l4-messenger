@@ -74,5 +74,13 @@ class Conversation extends \Eloquent {
     	if(count($friend_ids)) $this->users()->attach($friend_ids);
 	}
 
+	/**
+	 * Set read
+	 */
+	
+		public function isRead($by_user_id) {
+			$this->pivot->last_read = \Carbon\Carbon::now();
+		}
+
 	
 }

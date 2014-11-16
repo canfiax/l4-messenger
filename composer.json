@@ -13,7 +13,8 @@
     ],
     "require": {
         "laravel/framework": "4.*",
-        "illuminate/support": "4.x"
+        "illuminate/support": "4.x",
+        "nesbot/Carbon": "*"
     },
     "require-dev": {
         "mockery/mockery": "dev-master"
